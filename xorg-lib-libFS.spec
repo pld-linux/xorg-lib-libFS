@@ -1,4 +1,4 @@
-# $Rev: 3245 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3245 $, $Date: 2005-08-27 17:42:48 $
 #
 Summary:	FS library
 Summary(pl):	Biblioteka FS
@@ -14,7 +14,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	libtool
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRoot:	%{tmpdir}/libFS-%{version}-root-%(id -u -n)
