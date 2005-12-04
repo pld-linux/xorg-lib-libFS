@@ -1,12 +1,12 @@
 Summary:	FS library
 Summary(pl):	Biblioteka FS
 Name:		xorg-lib-libFS
-Version:	0.99.2
+Version:	0.99.3
 Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/lib/libFS-%{version}.tar.bz2
-# Source0-md5:	266b14d8891b8912298ed645c7c36902
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/lib/libFS-%{version}.tar.bz2
+# Source0-md5:	97c05cd1b2cb3b0a68c773ab613c6148
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -14,7 +14,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-proto-fontsproto-devel
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
