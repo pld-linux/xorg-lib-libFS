@@ -24,8 +24,8 @@ FS library.
 Biblioteka FS.
 
 %package devel
-Summary:	Header files libFS development
-Summary(pl):	Pliki nag³ówkowe do biblioteki libFS
+Summary:	Header files for libFS library
+Summary(pl):	Pliki nag³ówkowe biblioteki libFS
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-proto-fontsproto-devel
@@ -34,7 +34,7 @@ Requires:	xorg-proto-fontsproto-devel
 FS library.
 
 This package contains the header files needed to develop programs that
-use these libFS.
+use libFS.
 
 %description devel -l pl
 Biblioteka FS.
