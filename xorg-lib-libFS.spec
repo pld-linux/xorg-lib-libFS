@@ -2,7 +2,7 @@ Summary:	FS library
 Summary(pl):	Biblioteka FS
 Name:		xorg-lib-libFS
 Version:	1.0.0
-Release:	1
+Release:	4
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/lib/libFS-%{version}.tar.bz2
