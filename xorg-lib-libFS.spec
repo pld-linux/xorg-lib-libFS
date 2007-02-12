@@ -1,5 +1,5 @@
 Summary:	FS library
-Summary(pl.UTF-8):   Biblioteka FS
+Summary(pl.UTF-8):	Biblioteka FS
 Name:		xorg-lib-libFS
 Version:	1.0.0
 Release:	5
@@ -25,7 +25,7 @@ Biblioteka FS.
 
 %package devel
 Summary:	Header files for libFS library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libFS
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libFS
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-proto-fontsproto-devel
@@ -44,7 +44,7 @@ używających biblioteki libFS.
 
 %package static
 Summary:	Static libFS library
-Summary(pl.UTF-8):   Biblioteka statyczna libFS
+Summary(pl.UTF-8):	Biblioteka statyczna libFS
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
