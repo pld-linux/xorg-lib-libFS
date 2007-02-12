@@ -1,5 +1,5 @@
 Summary:	FS library
-Summary(pl):	Biblioteka FS
+Summary(pl.UTF-8):   Biblioteka FS
 Name:		xorg-lib-libFS
 Version:	1.0.0
 Release:	5
@@ -20,12 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 FS library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka FS.
 
 %package devel
 Summary:	Header files for libFS library
-Summary(pl):	Pliki nag³ówkowe biblioteki libFS
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libFS
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-proto-fontsproto-devel
@@ -36,15 +36,15 @@ FS library.
 This package contains the header files needed to develop programs that
 use libFS.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Biblioteka FS.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libFS.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libFS.
 
 %package static
 Summary:	Static libFS library
-Summary(pl):	Biblioteka statyczna libFS
+Summary(pl.UTF-8):   Biblioteka statyczna libFS
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -53,10 +53,10 @@ FS library.
 
 This package contains the static libFS library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka FS.
 
-Pakiet zawiera statyczn± bibliotekê libFS.
+Pakiet zawiera statycznÄ… bibliotekÄ™ libFS.
 
 %prep
 %setup -q -n libFS-%{version}
