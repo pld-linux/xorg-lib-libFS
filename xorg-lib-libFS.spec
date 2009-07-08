@@ -1,12 +1,12 @@
 Summary:	FS library
 Summary(pl.UTF-8):	Biblioteka FS
 Name:		xorg-lib-libFS
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libFS-%{version}.tar.bz2
-# Source0-md5:	81521249353fa33be7a4bb0062c2fbb9
+# Source0-md5:	ecf2d6a27da053500283e803efa2a808
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
