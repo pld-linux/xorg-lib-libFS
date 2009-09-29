@@ -1,5 +1,5 @@
-Summary:	FS library
-Summary(pl.UTF-8):	Biblioteka FS
+Summary:	libFS - X Font Service client library
+Summary(pl.UTF-8):	libFS - biblioteka kliencka usługi fontów X (X Font Service)
 Name:		xorg-lib-libFS
 Version:	1.0.2
 Release:	1
@@ -14,14 +14,18 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-xtrans-devel
 BuildRequires:	xorg-proto-fontsproto-devel
-BuildRequires:	xorg-util-util-macros >= 1.1
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-FS library.
+This package contains libFS, an X Font Service client library. It's
+used by clients of X Font Servers (xfs), such as xfsinfo, xfslsfonts,
+and the X servers themselves.
 
 %description -l pl.UTF-8
-Biblioteka FS.
+Ten pakiet zawiera libFS - bibliotekę kliencką usługi fontów X (X Font
+Service). Jest ona używana przez klientów serwerów fontów X (xfs - X
+Font Servers), takich jak xfsinfo, xfslsfonts czy same serwery X.
 
 %package devel
 Summary:	Header files for libFS library
@@ -31,13 +35,13 @@ Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-proto-fontsproto-devel
 
 %description devel
-FS library.
+libFS - biblioteka kliencka usługi fontów X (X Font Service).
 
 This package contains the header files needed to develop programs that
 use libFS.
 
 %description devel -l pl.UTF-8
-Biblioteka FS.
+libFS - biblioteka kliencka usługi fontów X (X Font Service).
 
 Pakiet zawiera pliki nagłówkowe niezbędne do kompilowania programów
 używających biblioteki libFS.
@@ -49,12 +53,12 @@ Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-FS library.
+libFS - biblioteka kliencka usługi fontów X (X Font Service).
 
 This package contains the static libFS library.
 
 %description static -l pl.UTF-8
-Biblioteka FS.
+libFS - biblioteka kliencka usługi fontów X (X Font Service).
 
 Pakiet zawiera statyczną bibliotekę libFS.
 
@@ -86,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/libFS.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libFS.so.6
 
@@ -94,7 +98,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libFS.so
 %{_libdir}/libFS.la
-%{_includedir}/X11/fonts/*.h
+%{_includedir}/X11/fonts/FSlib.h
 %{_pkgconfigdir}/libfs.pc
 
 %files static
