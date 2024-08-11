@@ -1,16 +1,16 @@
 Summary:	libFS - X Font Service client library
 Summary(pl.UTF-8):	libFS - biblioteka kliencka usługi fontów X (X Font Service)
 Name:		xorg-lib-libFS
-Version:	1.0.9
+Version:	1.0.10
 Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	https://xorg.freedesktop.org/releases/individual/lib/libFS-%{version}.tar.xz
-# Source0-md5:	742863a552ecd53cdb957b7b276213cc
+# Source0-md5:	c5cc0942ed39c49b8fcd47a427bd4305
 URL:		https://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.60
+BuildRequires:	autoconf >= 2.70
 BuildRequires:	automake
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-lib-xtrans-devel
